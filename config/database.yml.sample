@@ -1,0 +1,21 @@
+
+default: &default
+  adapter: mysql2
+  encoding: utf8
+  pool: 5
+  username: <%= ENV['OPEN_EYES_EXT_DATABASE_USERNAME'] %>
+  password: <%= ENV['OPEN_EYES_EXT_DATABASE_PASSWORD'] %>
+  socket: /var/run/mysqld/mysqld.sock
+
+development:
+  <<: *default
+  database: open_eyes_ext
+
+
+test:
+  <<: *default
+  database: open_eyes_ext_test
+
+
+production:
+  <<: *default

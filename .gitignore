@@ -11,3 +11,11 @@
 /log/*
 !/log/.keep
 /tmp
+
+db/structure.sql
+config/database.yml
+config/secrets.yml
+coverage
+.env
+
+/db/schema.rb
