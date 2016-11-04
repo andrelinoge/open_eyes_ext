@@ -5,6 +5,7 @@ ruby '~> 2.3'
 
 #A B C D E F
 gem 'any_login'
+gem 'bootstrap-sass'
 gem 'ckeditor'
 gem 'coffee-rails'
 gem 'devise'
@@ -18,8 +19,10 @@ gem 'jquery-rails'
 
 #M N O P Q R
 gem 'mysql2'
-gem 'rails', '~> 4.2'
 gem 'paperclip', github: 'thoughtbot/paperclip'
+gem 'puma'
+gem 'rails', '~> 4.2'
+gem 'redis-rails'
 
 #S T U V W X Y Z
 gem 'sass-rails', '~> 5.0'
