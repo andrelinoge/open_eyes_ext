@@ -1,7 +1,7 @@
 Rails.application.routes.draw do
   get 'wellcome/index'
 
-  devise_for :users
+  devise_for :users, :controllers => { :sessions => "admin/sessions" }
 
   root to: 'wellcome#index'
 
@@ -9,7 +9,7 @@ Rails.application.routes.draw do
 
   end
 
-  namespace :api do
+  namespace :api, defaults: { format: :json } do
 
   end
 
