@@ -12,8 +12,8 @@ html
   body.nav-md
     div.container.body
       div.main_container
-        = render 'partials/sidenav'
-        = render 'partials/topnav'
+        = render 'partials/admin_sidenav'
+        = render 'partials/admin_topnav'
 
         .right_col role="main"
           div
@@ -27,5 +27,6 @@ html
                   .x_content
                     = yield
 
-        = render 'partials/footer'
+        = render 'partials/admin_footer'
   = yield(:javascript)
+  = javascript_include_tag 'admin-initializer', 'data-turbolinks-track': true

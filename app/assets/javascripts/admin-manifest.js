@@ -3,7 +3,7 @@
 //= require turbolinks
 
 //= require bootstrap-sprockets
-//= require js/bootstrap.min.js
+
 //= require js/flot/jquery.flot.js
 //= require js/flot/jquery.flot.pie.js
 //= require js/flot/jquery.flot.orderBars.js
@@ -30,6 +30,5 @@
 //= require js/datatables/responsive.bootstrap.min.js
 
 //= require ckeditor/init
-//= require js/custom.js
 
 //= require_tree ./admin/

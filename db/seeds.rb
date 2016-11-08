@@ -6,6 +6,8 @@ email    = ENV['USER_EMAIL'] || 'admin@mail.com'
 puts 'Seeding admin user...'.colorize(color: :yellow)
 
 User.create({
+  first_name: 'first',
+  last_name: 'admin',
   email: email,
   password: password,
   password_confirmation: password

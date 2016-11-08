@@ -14,6 +14,7 @@ gem 'font-awesome-rails'
 gem 'friendly_id'
 
 #G H I J K L
+gem 'globalize'
 gem 'jbuilder', '~> 2.0'
 gem 'jquery-rails'
 
