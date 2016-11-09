@@ -11,4 +11,6 @@
 
 class Category < ActiveRecord::Base
   translates :title
+
+  validates :title, presence: true, uniqueness: true, length: { maximum: 255 }
 end
