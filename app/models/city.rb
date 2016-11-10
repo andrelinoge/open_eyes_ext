@@ -16,6 +16,7 @@
 #
 
 class City < ActiveRecord::Base
+  include ValidationPatterns
   include PaperclipAttachmentRemovable
 
   translates :title, :identity
